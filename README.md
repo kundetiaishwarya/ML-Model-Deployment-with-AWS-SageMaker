@@ -1,4 +1,4 @@
-# MultiTextClassificationModelDeployment
+# Multi Text Classification Model Deployment
 
 This project demonstrates a complete pipeline for fine-tuning a **DistilBERT** model to perform **multi-class text classification** on the **UCI News Aggregator Dataset**, using **Amazon SageMaker** for training and deployment.
 
