@@ -17,8 +17,9 @@ AWS SageMaker AI Notebooks/
 ## Dataset
 
 - **Source**: UCI News Aggregator Dataset
-- **Preprocessing**: 
-  - Loaded from an S3 bucket
+- **Preprocessing**:
+  - Follow the script.py for clear instructions 
+  - Dataset downloaded and uploaded to S3 Bucket.
   - Retained only `TITLE` and `CATEGORY` columns
   - Mapped categories:
     - `e` → Entertainment
