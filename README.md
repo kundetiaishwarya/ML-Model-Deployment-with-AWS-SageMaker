@@ -6,7 +6,7 @@ This project demonstrates a complete pipeline for fine-tuning a **DistilBERT** m
 
 Project Structure
 
-<pre> ``` AWS SageMaker AI Notebooks/ ├── MultiTextClassificationModelDeployment.ipynb # TrainingJob + Endpoint deployment ├── OptionalExperimentNotebook.ipynb # Optional exploration ├── EDA_MultiClassTextClassification.ipynb # Exploratory data analysis ├── script.py # Full Model Pipeline in PyTorch ``` </pre>
+``` AWS SageMaker AI Notebooks/ ├── MultiTextClassificationModelDeployment.ipynb # TrainingJob + Endpoint deployment ├── OptionalExperimentNotebook.ipynb # Optional exploration ├── EDA_MultiClassTextClassification.ipynb # Exploratory data analysis ├── script.py # Full Model Pipeline in PyTorch ```
 
 
 
