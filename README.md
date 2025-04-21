@@ -2,9 +2,19 @@
 
 This project demonstrates a complete pipeline for fine-tuning a **DistilBERT** model to perform **multi-class text classification** on the **UCI News Aggregator Dataset**, using **Amazon SageMaker** for training and deployment.
 
+
+
+Project Structure
+
+AWS SageMaker AI Notebooks/
+├── MultiTextClassificationModelDeployment.ipynb   # TrainingJob + Endpoint deployment
+├── OptionalExperimentNotebook.ipynb               # Optional exploration
+├── EDA_MultiClassTextClassification.ipynb         # Exploratory data analysis
+├── script.py                                      # Full Model Pipeline in PyTorch
+
 ---
 
-## 📂 Dataset
+## Dataset
 
 - **Source**: UCI News Aggregator Dataset
 - **Preprocessing**: 
@@ -20,7 +30,7 @@ This project demonstrates a complete pipeline for fine-tuning a **DistilBERT** m
 
 ---
 
-## 🤖 Model
+## Model
 
 - **Model Type**: `DistilBertForSequenceClassification`
 - **Library**: [Transformers](https://huggingface.co/docs/transformers/index) by HuggingFace
@@ -30,7 +40,7 @@ This project demonstrates a complete pipeline for fine-tuning a **DistilBERT** m
 
 ---
 
-## 🏗️ Training Pipeline
+## Training Pipeline
 
 Implemented in `script.py`:
 
@@ -42,7 +52,7 @@ Implemented in `script.py`:
 
 ---
 
-## ☁️ Model Deployment
+## Model Deployment
 
 Deployment logic is in `MultiTextClassificationModelDeployment.ipynb`, using `sagemaker.huggingface` SDK:
 
@@ -63,3 +73,9 @@ predictor = huggingface_model.deploy(
     initial_instance_count=1,
     instance_type='ml.m5.large'
 )
+
+
+
+
+
+
