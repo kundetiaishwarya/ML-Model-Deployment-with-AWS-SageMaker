@@ -12,7 +12,7 @@ AWS SageMaker AI Notebooks/
 ├── EDA_MultiClassTextClassification.ipynb         # Exploratory data analysis
 ├── script.py                                      # Full Model Pipeline in PyTorch
 
----
+
 
 ## Dataset
 
@@ -73,9 +73,3 @@ predictor = huggingface_model.deploy(
     initial_instance_count=1,
     instance_type='ml.m5.large'
 )
-
-
-
-
-
-
